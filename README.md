@@ -1,12 +1,3 @@
-.
-├── Dockerfile
-├── docker-compose.yml
-├── monitor_script.py
-├── requirements.txt
-├── .env
-├── .gitignore
-└── README.md
-
 ## 环境配置
 
 ### 1. 创建 `.env` 文件
@@ -16,7 +7,7 @@
 MONITOR_URL=
 MONITOR_PORT=
 SCKEY=
-CHECK_INTERVAL=600
+CHECK_INTERVAL=300
 
 ### 2. 安装 Docker 和 Docker Compose
 
