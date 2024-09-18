@@ -13,10 +13,10 @@
 
 在项目根目录下创建一个 `.env` 文件，并添加以下内容：
 
-MONITOR_URL=10.186.1.11
-MONITOR_PORT=7777
-SCKEY=SCT248579TteEdOADRBhslKjrOE6wJQKTW
-CHECK_INTERVAL=600 # 检查间隔时间，单位为秒
+MONITOR_URL=
+MONITOR_PORT=
+SCKEY=
+CHECK_INTERVAL=600
 
 ### 2. 安装 Docker 和 Docker Compose
 
@@ -97,3 +97,9 @@ docker-compose down
 ## 许可证
 
 本项目采用 MIT 许可证，详细信息请参阅 LICENSE 文件。
+
+# Alas 监控脚本
+
+这是一个使用 Selenium 和 OpenCV 的监控脚本，用于定期检查指定的网页，并在检测到特定图像时执行点击操作，并通过 Server 酱发送微信告警。
+
+## 目录结构
