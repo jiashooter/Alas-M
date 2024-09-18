@@ -1,0 +1,21 @@
+services:
+  monitor:
+    build: .
+    container_name: Alas-M
+    volumes:
+      - ./:/app
+      - ./tmp:/app/tmp
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    environment:
+      - MONITOR_URL=${MONITOR_URL}
+      - MONITOR_PORT=${MONITOR_PORT:-}
+      - SCKEY=${SCKEY}
+      - CHECK_INTERVAL=${CHECK_INTERVAL}
+      - TZ=Asia/Shanghai
+    env_file:
+      - .env
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: always
