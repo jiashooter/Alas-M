@@ -31,29 +31,25 @@ CHECK_INTERVAL=600
 
 在项目根目录下运行以下命令来构建 Docker 镜像：
 
-sh
-docker-compose build
+`docker-compose build`
 
 ### 2. 启动容器
 
 构建完成后，运行以下命令来启动容器：
 
-sh
-docker-compose up -d
+`docker-compose up -d`
 
 ### 3. 查看日志
 
 你可以通过以下命令查看容器的日志输出：
 
-sh
-docker-compose logs -f
+`docker-compose logs -f`
 
 ### 4. 停止容器
 
 如果需要停止容器，可以运行以下命令：
 
-sh
-docker-compose down
+`docker-compose down`
 
 ## 文件说明
 
@@ -97,9 +93,3 @@ docker-compose down
 ## 许可证
 
 本项目采用 MIT 许可证，详细信息请参阅 LICENSE 文件。
-
-# Alas 监控脚本
-
-这是一个使用 Selenium 和 OpenCV 的监控脚本，用于定期检查指定的网页，并在检测到特定图像时执行点击操作，并通过 Server 酱发送微信告警。
-
-## 目录结构
