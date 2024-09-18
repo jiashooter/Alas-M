@@ -4,10 +4,13 @@
 
 在项目根目录下创建一个 `.env` 文件，并添加以下内容：
 
-MONITOR_URL=
-MONITOR_PORT=
-SCKEY=
-CHECK_INTERVAL=300
+MONITOR_URL=  
+
+MONITOR_PORT=  
+
+SCKEY=  
+
+CHECK_INTERVAL=300  
 
 ### 2. 安装 Docker 和 Docker Compose
 
